@@ -280,12 +280,67 @@
   color: #1e293b;
 }
 
-.home-description {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #666666;
-  font-family: 'Georgia', serif;
-  font-style: italic;
+.home-skills {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.home-skill-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 120px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: bounceIn 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.home-skill-card:nth-child(1) { animation-delay: 0.2s; }
+.home-skill-card:nth-child(2) { animation-delay: 0.4s; }
+.home-skill-card:nth-child(3) { animation-delay: 0.6s; }
+.home-skill-card:nth-child(4) { animation-delay: 0.8s; }
+
+.home-skill-card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 2px;
+  height: 60%;
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-50%);
+  transition: left 0.6s ease;
+}
+
+.home-skill-card:hover::before {
+  left: -2px;
+}
+
+.home-skill-card:hover {
+  transform: translateY(-5px);
+  border: 2px solid #333;
+  animation: glowing 0.5s ease-in-out;
+}
+
+.home-skill-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.home-skill-card h4 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
 }
 
 .skills-home {
@@ -647,9 +702,10 @@
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .skill-card {
@@ -667,22 +723,23 @@
 .skill-card::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  top: 50%;
+  left: 100%;
+  width: 2px;
+  height: 60%;
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-50%);
   transition: left 0.6s ease;
 }
 
 .skill-card:hover::before {
-  left: 100%;
+  left: -2px;
 }
 
 .skill-card:hover {
   transform: translateY(-5px);
-  border: 2px solid #3b82f6;
-  color: #3b82f6;
+  border: 2px solid #333;
+  color: #333;
   animation: glowing 0.5s ease-in-out;
 }
 

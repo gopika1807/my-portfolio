@@ -229,6 +229,11 @@ function App() {
               <h3>JavaScript</h3>
               <p>Dynamic functionality</p>
             </div>
+            <div className="skill-card">
+              <div className="skill-icon">⚙️</div>
+              <h3>C & C++</h3>
+              <p>System programming</p>
+            </div>
           </div>
         </div>
       </section>
