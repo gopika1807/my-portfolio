@@ -213,28 +213,6 @@ function App() {
       <section id="skills" className="skills-home">
         <div className="container">
           <h2>Skills</h2>
-          <div className="skills-grid">
-            <div className="skill-card">
-              <div className="skill-icon">⚛️</div>
-              <h3>React</h3>
-              <p>Building interactive UIs</p>
-            </div>
-            <div className="skill-card">
-              <div className="skill-icon">🎨</div>
-              <h3>CSS/HTML</h3>
-              <p>Modern web styling</p>
-            </div>
-            <div className="skill-card">
-              <div className="skill-icon">💻</div>
-              <h3>JavaScript</h3>
-              <p>Dynamic functionality</p>
-            </div>
-            <div className="skill-card">
-              <div className="skill-icon">⚙️</div>
-              <h3>C & C++</h3>
-              <p>System programming</p>
-            </div>
-          </div>
         </div>
       </section>
 
