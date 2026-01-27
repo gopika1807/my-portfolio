@@ -1,0 +1,11 @@
+.lanyard-wrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .lanyard-wrapper {
+    height: 300px;
+  }
+}

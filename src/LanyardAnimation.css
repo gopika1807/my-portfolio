@@ -1,0 +1,137 @@
+.lanyard-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.lanyard-string {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 120px;
+  background: linear-gradient(to bottom, #666, #999);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.lanyard-card {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  cursor: grab;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: swing 3s ease-in-out infinite;
+  margin-top: 100px;
+}
+
+.lanyard-card:hover {
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  transform: translateY(-5px);
+}
+
+.lanyard-card.dragging {
+  cursor: grabbing;
+  animation: none;
+  transition: none;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.card-content {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-logo {
+  font-size: 48px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 16px;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.card-skills span {
+  background: rgba(255,255,255,0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  backdrop-filter: blur(10px);
+}
+
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .lanyard-container {
+    height: 300px;
+  }
+  
+  .lanyard-card {
+    width: 160px;
+    height: 220px;
+    margin-top: 80px;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-logo {
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+  }
+  
+  .card-header h3 {
+    font-size: 18px;
+  }
+}
