@@ -1,6 +1,17 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
+// Import all images
+import profileImg from './assets/profile.jpg'
+import heroProfileImg from './assets/hero-profile.jpg'
+import iitPenPhoto from './assets/iit-pen-my-photo.jpeg'
+import kamakotiSirPhoto from './assets/kamakoti-sir-photo.jpeg'
+import hariKrishnanSirPhoto from './assets/hari-krishnan-sir.jpeg'
+import aarumugamSirPhoto from './assets/aarumugam-sir.jpeg'
+import linkedinIcon from './assets/linkedin-icon.png'
+import instagramIcon from './assets/instagram-icon.avif'
+import githubIcon from './assets/github-icon.png'
+
 function App() {
   const [darkMode, setDarkMode] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
@@ -37,7 +48,7 @@ function App() {
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
-              <img src="/profile.jpg" alt="Gopika Shree" className="nav-profile" />
+              <img src={profileImg} alt="Gopika Shree" className="nav-profile" />
             </li>
           </ul>
         </nav>
@@ -65,19 +76,19 @@ function App() {
             <div className="social-preview animate-bounce-in animation-delay-900 flex gap-6 mt-8">
               <div className="social-item group">
                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7371572611111292929/" target="_blank" rel="noopener noreferrer" className="social-link backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl p-4 hover:bg-white/30 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl">
-                  <img src="/linkedin-icon.png" alt="LinkedIn" className="social-profile-img" />
+                  <img src={linkedinIcon} alt="LinkedIn" className="social-profile-img" />
                 </a>
                 <span className="social-label text-sm font-medium text-gray-700 group-hover:text-blue-600 transition-colors">LinkedIn</span>
               </div>
               <div className="social-item group">
                 <a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener noreferrer" className="social-link backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl p-4 hover:bg-white/30 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl">
-                  <img src="/instagram-icon.avif" alt="Instagram" className="social-profile-img" />
+                  <img src={instagramIcon} alt="Instagram" className="social-profile-img" />
                 </a>
                 <span className="social-label text-sm font-medium text-gray-700 group-hover:text-pink-600 transition-colors">Instagram</span>
               </div>
               <div className="social-item group">
                 <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="social-link backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl p-4 hover:bg-white/30 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl">
-                  <img src="/github-icon.png" alt="GitHub" className="social-profile-img" />
+                  <img src={githubIcon} alt="GitHub" className="social-profile-img" />
                 </a>
                 <span className="social-label text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">GitHub</span>
               </div>
@@ -87,7 +98,7 @@ function App() {
             <div className="profile-container relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-2xl opacity-20 animate-pulse"></div>
               <div className="relative rounded-full p-2">
-                <img src="/hero-profile.jpg" alt="Gopika Shree" className="profile-img hover:scale-110 transition-transform duration-500 rounded-full shadow-2xl w-80 h-80 object-cover aspect-square" />
+                <img src={heroProfileImg} alt="Gopika Shree" className="profile-img hover:scale-110 transition-transform duration-500 rounded-full shadow-2xl w-80 h-80 object-cover aspect-square" />
               </div>
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-green-400 to-blue-500 rounded-full animate-ping"></div>
               <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-pink-400 to-red-500 rounded-full animate-bounce"></div>
@@ -130,7 +141,7 @@ function App() {
                   <div className="id-card-title">Developer ID</div>
                 </div>
                 <div className="id-card-photo">
-                  <img src="/profile.jpg" alt="Gopika Shree" className="profile-photo" />
+                  <img src={profileImg} alt="Gopika Shree" className="profile-photo" />
                 </div>
                 <div className="id-card-info">
                   <h4>Gopika Shree</h4>
@@ -162,35 +173,35 @@ function App() {
             <div className="digital-world-photos">
               <div className="photos-track">
                 <div className="photo-container">
-                  <img src="/iit-pen-my-photo.jpeg" alt="IIT Pen Photo" className="digital-photo" />
+                  <img src={iitPenPhoto} alt="IIT Pen Photo" className="digital-photo" />
                   <span className="photo-label">IIT Pen Photo</span>
                 </div>
                 <div className="photo-container">
-                  <img src="/kamakoti-sir-photo.jpeg" alt="Dr.Kamakoti Sir" className="digital-photo" />
+                  <img src={kamakotiSirPhoto} alt="Dr.Kamakoti Sir" className="digital-photo" />
                   <span className="photo-label">Dr.Kamakoti Sir</span>
                 </div>
                 <div className="photo-container">
-                  <img src="/hari-krishnan-sir.jpeg" alt="Hari Krishnan Sir" className="digital-photo" />
+                  <img src={hariKrishnanSirPhoto} alt="Hari Krishnan Sir" className="digital-photo" />
                   <span className="photo-label">Hari Krishnan Sir</span>
                 </div>
                 <div className="photo-container">
-                  <img src="/aarumugam-sir.jpeg" alt="Aarumugam Sir" className="digital-photo" />
+                  <img src={aarumugamSirPhoto} alt="Aarumugam Sir" className="digital-photo" />
                   <span className="photo-label">Aarumugam Sir</span>
                 </div>
                 <div className="photo-container">
-                  <img src="/iit-pen-my-photo.jpeg" alt="IIT Pen Photo" className="digital-photo" />
+                  <img src={iitPenPhoto} alt="IIT Pen Photo" className="digital-photo" />
                   <span className="photo-label">IIT Pen Photo</span>
                 </div>
                 <div className="photo-container">
-                  <img src="/kamakoti-sir-photo.jpeg" alt="Dr.Kamakoti Sir" className="digital-photo" />
+                  <img src={kamakotiSirPhoto} alt="Dr.Kamakoti Sir" className="digital-photo" />
                   <span className="photo-label">Dr.Kamakoti Sir</span>
                 </div>
                 <div className="photo-container">
-                  <img src="/hari-krishnan-sir.jpeg" alt="Hari Krishnan Sir" className="digital-photo" />
+                  <img src={hariKrishnanSirPhoto} alt="Hari Krishnan Sir" className="digital-photo" />
                   <span className="photo-label">Hari Krishnan Sir</span>
                 </div>
                 <div className="photo-container">
-                  <img src="/aarumugam-sir.jpeg" alt="Aarumugam Sir" className="digital-photo" />
+                  <img src={aarumugamSirPhoto} alt="Aarumugam Sir" className="digital-photo" />
                   <span className="photo-label">Aarumugam Sir</span>
                 </div>
               </div>
@@ -320,7 +331,7 @@ function App() {
           <div className="footer-content">
             <div className="footer-left">
               <div className="footer-logo">
-                <img src="/profile.jpg" alt="Gopika Shree" className="footer-profile" />
+                <img src={profileImg} alt="Gopika Shree" className="footer-profile" />
                 <span>Gopika Shree</span>
               </div>
               <p className="footer-description">Frontend Developer passionate about creating beautiful and functional web experiences.</p>
@@ -341,13 +352,13 @@ function App() {
                 <h4>Connect</h4>
                 <div className="footer-social">
                   <a href="https://www.linkedin.com/feed/update/urn:li:activity:7371572611111292929/" target="_blank" rel="noopener noreferrer">
-                    <img src="/linkedin-icon.png" alt="LinkedIn" />
+                    <img src={linkedinIcon} alt="LinkedIn" />
                   </a>
                   <a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener noreferrer">
-                    <img src="/instagram-icon.avif" alt="Instagram" />
+                    <img src={instagramIcon} alt="Instagram" />
                   </a>
                   <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="/github-icon.png" alt="GitHub" />
+                    <img src={githubIcon} alt="GitHub" />
                   </a>
                 </div>
               </div>
