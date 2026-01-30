@@ -173,8 +173,8 @@ function App() {
             <div className="digital-world-photos">
               <div className="photos-track">
                 <div className="photo-container">
-                  <img src={iitPenPhoto} alt="IIT Pen Photo" className="digital-photo" />
-                  <span className="photo-label">IIT Pen Photo</span>
+                  <img src={iitPenPhoto} alt="IIT Pen from Kamakoti Sir" className="digital-photo" />
+                  <span className="photo-label">IIT Pen from Kamakoti Sir</span>
                 </div>
                 <div className="photo-container">
                   <img src={kamakotiSirPhoto} alt="Dr.Kamakoti Sir" className="digital-photo" />
@@ -185,12 +185,12 @@ function App() {
                   <span className="photo-label">Hari Krishnan Sir</span>
                 </div>
                 <div className="photo-container">
-                  <img src={aarumugamSirPhoto} alt="Aarumugam Sir" className="digital-photo" />
-                  <span className="photo-label">Aarumugam Sir</span>
+                  <img src={aarumugamSirPhoto} alt="Singaram Sir" className="digital-photo" />
+                  <span className="photo-label">Singaram Sir</span>
                 </div>
                 <div className="photo-container">
-                  <img src={iitPenPhoto} alt="IIT Pen Photo" className="digital-photo" />
-                  <span className="photo-label">IIT Pen Photo</span>
+                  <img src={iitPenPhoto} alt="IIT Pen from Kamakoti Sir" className="digital-photo" />
+                  <span className="photo-label">IIT Pen from Kamakoti Sir</span>
                 </div>
                 <div className="photo-container">
                   <img src={kamakotiSirPhoto} alt="Dr.Kamakoti Sir" className="digital-photo" />
@@ -201,8 +201,8 @@ function App() {
                   <span className="photo-label">Hari Krishnan Sir</span>
                 </div>
                 <div className="photo-container">
-                  <img src={aarumugamSirPhoto} alt="Aarumugam Sir" className="digital-photo" />
-                  <span className="photo-label">Aarumugam Sir</span>
+                  <img src={aarumugamSirPhoto} alt="Singaram Sir" className="digital-photo" />
+                  <span className="photo-label">Singaram Sir</span>
                 </div>
               </div>
             </div>
